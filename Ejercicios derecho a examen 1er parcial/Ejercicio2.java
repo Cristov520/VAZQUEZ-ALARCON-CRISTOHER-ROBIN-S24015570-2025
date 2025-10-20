@@ -8,7 +8,7 @@ public class Ejercicio2 {
         System.out.println("=====Calcular area del un circulo=====");
         System.out.print("Ingresa un valor para el radio: ");
         radio = input.nextDouble();
-        area = PI * (radio + radio);
+        area = PI * (radio * radio);
         
         System.out.println("El area del circulo es: " + area);
         
