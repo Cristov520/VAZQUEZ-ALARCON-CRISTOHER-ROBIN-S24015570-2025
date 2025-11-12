@@ -11,8 +11,8 @@ public class Ejercicio4 {
 
 	for(int i = 1; i <= filas; i++) {
 	    for(int j = 1; j <= i; j++) {
-		System.out.print(num + " ");
-		num++;
+		    System.out.print(num + " ");
+	    	num++;
 
 	    }
 	    System.out.println("");
@@ -21,4 +21,5 @@ public class Ejercicio4 {
 
 
     }
+
 }
