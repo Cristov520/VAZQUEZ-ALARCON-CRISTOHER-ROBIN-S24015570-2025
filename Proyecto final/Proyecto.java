@@ -70,14 +70,14 @@ public class Proyecto {
     //Metodo para dar de alta a los trabajadores
     public static void darDeAlta(String matriz[][]) {
         for (int i = 0; i < 3; i++) {
-            System.out.print("Ingresa el nombre de empleado " + (i + 1) + ": ");
+            System.out.print("Ingresa el nombre de el/la empleado/a " + (i + 1) + ": ");
             matriz[i][0] = input.nextLine();
             
             boolean idRepetido; //Centinela que verifica que no haya id repetidos en el bucle
             //Ciclo que verifica que no haya dos id iguales
             do {
                 idRepetido = false;
-                System.out.print("Ingrese el id del empleado " + matriz[i][0] + ": ");
+                System.out.print("Ingrese el id de/la empleado/a " + matriz[i][0] + ": ");
                 matriz[i][1] = input.nextLine();
                 for(int fila = 0; fila < i; fila++) {
                     if(matriz[i][1].equals(matriz[fila][1])) {
@@ -87,9 +87,9 @@ public class Proyecto {
                     }
                 }
             } while(idRepetido == true);
-            System.out.print("Ingrese el sueldo del trabajador " + matriz[i][0] + ": ");
+            System.out.print("Ingrese el sueldo de el/la empleado/a " + matriz[i][0] + ": ");
             matriz[i][2] = input.nextLine();
-            System.out.print("Ingresa las horas trabajadas por el trabajador " + matriz[i][0] + ": ");
+            System.out.print("Ingresa las horas trabajadas por el/la empleado/a " + matriz[i][0] + ": ");
             matriz[i][3] = input.nextLine();
 
             
@@ -101,7 +101,7 @@ public class Proyecto {
 
     //Metodo para las consultas generales
     public static void consultasGenerales(String matriz[][]) {
-        //printf muestra la informacion con formato
+        //printf muestra la informacion de todos los empleados con formato
         System.out.printf("%-20s %-10s %-10s %-10s\n",
                         "Nombre", "ID", "Sueldo", "Horas");
         System.out.println("--------------------------------------------------");
@@ -160,3 +160,4 @@ public class Proyecto {
 
 
 }
+
