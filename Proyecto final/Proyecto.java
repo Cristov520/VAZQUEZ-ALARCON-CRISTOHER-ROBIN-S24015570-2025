@@ -78,7 +78,7 @@ public class Proyecto {
             do {
                 idRepetido = false;
                 System.out.print("Ingrese el id del empleado " + matriz[i][0] + ": ");
-                matriz[i][1] =String.valueOf(input.nextLine());
+                matriz[i][1] = input.nextLine();
                 for(int fila = 0; fila < i; fila++) {
                     if(matriz[i][1].equals(matriz[fila][1])) {
                         System.out.println("Error, ese id ya lo tiene otro empleado, intente con otro");
@@ -156,6 +156,7 @@ public class Proyecto {
 
         
     }
+
 
 
 }
